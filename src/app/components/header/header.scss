@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+  padding: 10px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  list-style: none;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+a.active{
+    background-color: red;
+    padding: 4px;
+}
