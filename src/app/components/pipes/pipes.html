@@ -1,0 +1,14 @@
+<h1>Pipes</h1>
+
+<h4>{{ name | uppercase }}</h4>
+<h4>{{ name | titlecase }}</h4>
+<h4>{{ 'POOJA' | lowercase }}</h4>
+
+<h4>Normal date -> {{ date }}</h4>
+<h4>date - {{ date | date }}</h4>
+<h4>fulldate - {{ date | date: 'fullDate' }}</h4>
+<h4>time - {{ date | date: 'hh:mm:ss' }}</h4>
+<h4>Year - {{ date | date: 'yyyy' }}</h4>
+<br />
+<h4>Multiple Pipes</h4>
+<h4>fulldate with uppercase - {{ date | date: 'fullDate' | uppercase }}</h4>
