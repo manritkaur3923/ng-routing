@@ -12,3 +12,18 @@
 <br />
 <h4>Multiple Pipes</h4>
 <h4>fulldate with uppercase - {{ date | date: 'fullDate' | uppercase }}</h4>
+
+<h1>Custom Pipes</h1>
+<h3>Shorten Text</h3>
+<h4>{{ 'Angular is a powerful frontend framework' | shortenText: 20 : '***' }}</h4>
+
+<h3>Filter Students</h3>
+@for (stu of students | filterStudents: 70; track stu.name) {
+  <div>{{ stu.name }} - {{ stu.marks }}</div>
+}
+
+<h3>Search Students</h3>
+<input type="text" [(ngModel)]="searchText" />
+@for (stu of students | searchStudents: searchText; track stu.name) {
+  <div>{{ stu.name }} - {{ stu.marks }}</div>
+}
